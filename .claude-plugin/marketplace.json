@@ -1,0 +1,15 @@
+{
+  "name": "biks2013-claudecode",
+  "description": "Claude Code plugins from BikS2013-ClaudeCode",
+  "owner": {
+    "name": "BikS2013",
+    "url": "https://github.com/BikS2013-ClaudeCode"
+  },
+  "plugins": [
+    {
+      "name": "youtube-cleanup",
+      "description": "Remove watched YouTube Shorts from your YouTube watch history, leaving regular videos untouched",
+      "source": "./plugins/youtube-cleanup"
+    }
+  ]
+}

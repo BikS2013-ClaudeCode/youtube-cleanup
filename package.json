@@ -1,0 +1,12 @@
+{
+  "name": "youtube-cleanup-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Workspace root. The tool and its Claude Code plugin live in plugins/youtube-cleanup.",
+  "scripts": {
+    "postinstall": "npm --prefix plugins/youtube-cleanup/cli install",
+    "build": "npm --prefix plugins/youtube-cleanup/cli run build",
+    "typecheck": "npm --prefix plugins/youtube-cleanup/cli run typecheck",
+    "cli": "node plugins/youtube-cleanup/cli/dist/cli.js"
+  }
+}

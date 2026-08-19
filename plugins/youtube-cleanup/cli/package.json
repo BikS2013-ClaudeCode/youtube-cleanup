@@ -1,0 +1,35 @@
+{
+  "name": "youtube-cleanup",
+  "version": "1.0.0",
+  "description": "Remove watched YouTube Shorts from your YouTube watch history, and nothing else.",
+  "type": "module",
+  "bin": {
+    "youtube-cleanup": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "files": [
+    "dist",
+    "README.md",
+    ".env.example"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "commander": "^15.0.0",
+    "playwright-core": "^1.62.1"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}
